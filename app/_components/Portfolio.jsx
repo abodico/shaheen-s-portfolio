@@ -3,7 +3,7 @@ import Image from "next/image"
 import React, { useEffect, useState } from "react"
 // import { type SanityDocument } from "next-sanity"
 
-import { client } from "@/sanity/client"
+import { client } from "../../sanity/client"
 import createImageUrlBuilder from "@sanity/image-url"
 import Link from "next/link"
 

@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
-import { client } from "@/sanity/client"
+import { client } from "../../sanity/client"
 import createImageUrlBuilder from "@sanity/image-url"
 import Link from "next/link"
 import Slider from "react-slick"
