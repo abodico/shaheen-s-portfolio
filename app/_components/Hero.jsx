@@ -1,6 +1,6 @@
 import Image from "next/image"
 import React from "react"
-import avatar from "/public/Subtract.png"
+import avatar from "../../public/Subtract.png"
 import Counters from "./Counters"
 
 const Hero = () => {

@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "/public/footerLogo.svg"
+import logo from "../../public/footerLogo.svg"
 import Image from "next/image"
 import { FaRegCopyright } from "react-icons/fa"
 const links = [
