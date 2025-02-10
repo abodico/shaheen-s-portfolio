@@ -1,5 +1,5 @@
 import Image from "next/image"
-import person from "@/public/Person.png"
+import person from "../../public/Person.png"
 import { FaFacebookF } from "react-icons/fa"
 import { FaDribbble } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
