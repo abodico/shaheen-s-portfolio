@@ -22,10 +22,12 @@ const data = [
 ]
 const WhatIDo = () => {
     return (
-        <div className="bg-section-secondary py-20 px-12">
-            <div className="container mx-auto flex items-center justify-between ">
-                <div className="max-w-[40%]">
-                    <h2 className="text-5xl text-[#333] mb-6">What I do?</h2>
+        <div className="bg-section-secondary lg:py-20 py-10 lg:px-12 px-4">
+            <div className="container mx-auto flex lg:flex-row flex-col lg:gap-0 gap-8 items-center justify-between">
+                <div className="lg:max-w-[40%] lg:text-left text-center">
+                    <h2 className="lg:text-5xl font-semibold md:text-3xl text-2xl text-[#333] lg:mb-6 mb-4 ">
+                        What I do?
+                    </h2>
                     <p className="text-tsecondary text-lg mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nulla purus arcu, varius eget velit non, laoreet
@@ -36,11 +38,11 @@ const WhatIDo = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nulla purus arcu, varius eget velit non.
                     </p>
-                    <button className="mt-12 inline-block rounded bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden">
+                    <button className="lg:mt-12 mt-4 inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden">
                         Say Hello!
                     </button>
                 </div>
-                <div className="flex flex-col gap-6 max-w-[50%]">
+                <div className="flex flex-col lg:gap-6 gap-4 lg:max-w-[50%]">
                     {data.map((item) => (
                         <div key={item.title}>
                             <Card title={item.title} text={item.text} />

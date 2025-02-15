@@ -32,17 +32,17 @@ const socials = [
 ]
 const Experience = () => {
     return (
-        <div className="px-12">
-            <div className="shadow-experience-double container mx-auto relative top-20 flex gap-32 px-28 py-20 rounded-2xl max-w-[1320px]c bg-white">
+        <div className="lg:px-12">
+            <div className="shadow-experience-double container mx-auto relative lg:top-20 top-10 flex lg:flex-row flex-col justify-between items-center 2xl:gap-32 xl:gap-24 md:gap-10 gap-16  xl:px-28 lg:px-12 px-4 lg:py-20 py-8 rounded-2xl bg-white">
                 {/* image-side */}
-                <div className="w-[424px] h-[468px] bg-[#F0F1F3] overflow-visible rounded-[10px] relative z-10">
+                <div className="xl:w-[424px] xl:h-[468px] lg:w-[380px] lg:h-[400px] md:w-[330px] md:h-[350px] w-[270px] h-[290px] bg-[#F0F1F3] overflow-visible rounded-[10px] relative z-10">
                     <div className="size-full bg-[#F0F1F3] overflow-visible rounded-[10px] absolute inset-0 z-10"></div>
                     <Image
                         src={person.src}
                         alt="person"
                         width={480}
                         height={483}
-                        className="relative z-10 w-[460px] h-[463px] max-w-max max-h-max  rounded-[10px]"
+                        className="relative z-10 xl:w-[460px] xl:h-[463px] lg:w-[400px] md:w-[350px] md:h-auto w-[295px]c h-[295px] bottom-1 md:bottom-0 max-w-max max-h-max rounded-[10px]"
                     />
                     <div className="absolute inset-0 w-[calc(100%+10px)] h-[calc(100%+10px)] rounded-[10px] bg-primary z-0 animate-shake"></div>
                     {/* socials */}
@@ -51,7 +51,7 @@ const Experience = () => {
                             <Link
                                 key={item.link}
                                 href={item.link}
-                                className="size-12 rounded-[4px] text-primary bg-white transition hover:bg-primary hover:text-white text-center flex items-center justify-center"
+                                className="xl:size-12 md:size-10 size-8 rounded-[4px] text-primary bg-white transition hover:bg-primary hover:text-white text-center flex items-center justify-center"
                             >
                                 {item.icon}
                             </Link>
@@ -59,8 +59,8 @@ const Experience = () => {
                     </div>
                 </div>
                 {/* info-side */}
-                <div className="">
-                    <h3 className="text-[38px] leading-[50px] mb-8">
+                <div className="max-w-[536px]  lg:text-left text-center">
+                    <h3 className="xl:text-[38px] font-semibold md:text-3xl text-2xl text-tprimary md:leading-[50px] md:mb-8 mb-4">
                         I am Professional User Experience Designer
                     </h3>
                     <p className="text-lg text-[#556070] mb-4">
@@ -74,16 +74,16 @@ const Experience = () => {
                         and clients. I design digital products with enterprises
                         and startups since 2023.
                     </p>
-                    <div className="flex gap-4">
+                    <div className="flex md:flex-row flex-col justify-center lg:justify-start gap-4">
                         <Link
-                            className="inline-block rounded bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
+                            className="inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
                             href="#"
                         >
                             My Project
                         </Link>
 
                         <a
-                            className="flex items-center gap-3 rounded border border-current px-6 text-sm font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
+                            className="flex items-center gap-3 md:w-auto w-full justify-center rounded border border-current px-6 py-3 text-sm font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
                             download="Abdalmoamen Abbara.pdf"
                             href={"Abdalmoamen Abbara.pdf"}
                         >

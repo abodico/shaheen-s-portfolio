@@ -12,12 +12,14 @@ import { TbSend2 } from "react-icons/tb"
 const Card = ({ title, link, icon, href }) => (
     <a
         href={href}
-        className="group rounded-[10px] flex gap-3 w-full p-6 hover:shadow-[0px_12px_64px_0px_#1C19191F] transition-all"
+        className="group rounded-[10px] flex gap-3 w-full p-6 hover:shadow-[0px_12px_64px_0px_#1C19191F] transition-all overflow-hidden"
     >
         {icon}
-        <div className="">
+        <div className="max-w-[calc(100%-60px)]">
             <p className="text-tsecondary text-sm mb-1">{title}</p>
-            <p className="text-tprimary">{link}</p>
+            <p className="text-tprimary overflow-hidden text-ellipsis md:text-base text-sm">
+                {link}
+            </p>
         </div>
     </a>
 )
@@ -72,18 +74,18 @@ const socials = [
 ]
 const Contact = () => {
     return (
-        <div className="bg-white px-12">
-            <div className="bg-white container mx-auto rounded-2xl relative top-20 p-[88px] flex items-center justify-between shadow-[0px_59px_124px_0px_#0000001F]">
+        <div className="bg-white lg:px-12 md:px-4">
+            <div className="bg-white container mx-auto rounded-2xl relative top-20 xl:p-[88px] lg:p-14 md:p-10 p-2 flex lg:flex-row flex-col items-center justify-between shadow-[0px_59px_124px_0px_#0000001F]">
                 {/* left-side */}
-                <div className="max-w-[40%]">
-                    <h3 className="text-4xl mb-4 text-tprimary">
+                <div className="lg:max-w-[40%] ">
+                    <h3 className="lg:text-4xl font-semibold md:text-3xl text-2xl mb-4 text-tprimary lg:text-left text-center">
                         Let's discuss your Project
                     </h3>
-                    <p className="text-lg text-tsecondary mb-9">
+                    <p className="text-lg text-tsecondary xl:mb-9 lg:mb-6 mb-4 lg:text-left text-center w-fit px-1">
                         There are many variations of passages of Lorem Ipsum
                         available. but the majority have suffered alte.
                     </p>
-                    <div className="flex flex-col gap-3 mb-9">
+                    <div className="flex flex-col gap-3 xl:mb-9 lg:mb-6 mb-4 ">
                         {contacts.map((contact) => (
                             <div key={contact.title}>
                                 <Card
@@ -96,7 +98,7 @@ const Contact = () => {
                         ))}
                     </div>
                     {/* socials */}
-                    <div className="flex gap-3  bg-white w-fit">
+                    <div className="flex gap-3  bg-white w-fit mx-auto lg:mb-0 mb-10">
                         {socials.map((item) => (
                             <Link
                                 key={item.link}
@@ -109,8 +111,8 @@ const Contact = () => {
                     </div>
                 </div>
                 {/* form */}
-                <div className="max-w-[50%]">
-                    <p className="text-tsecondary text-lg mb-12">
+                <div className="lg:max-w-[50%]">
+                    <p className="text-tsecondary text-lg lg:text-left text-center lg:mb-12 mb-8">
                         There are many variations of passages of Lorem Ipsum
                         available. but the majority have suffered alte.
                     </p>
@@ -131,7 +133,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                             <div>
                                 <label className="sr-only" htmlFor="email">
                                     Email
@@ -187,7 +189,7 @@ const Contact = () => {
                         <div className="mt-4">
                             <button
                                 type="submit"
-                                className="group relative inline-flex items-center overflow-hidden rounded bg-primary px-6 py-3 tracking-widest text-white focus:ring-3 focus:outline-hidden"
+                                className="group relative md:w-auto w-full inline-flex justify-center items-center overflow-hidden rounded bg-primary px-6 py-3 tracking-widest text-white focus:ring-3 focus:outline-hidden"
                             >
                                 <span className="absolute -end-full transition-all group-hover:end-4 mb-1">
                                     <TbSend2 />

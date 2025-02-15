@@ -5,9 +5,9 @@ import Counters from "./Counters"
 
 const Hero = () => {
     return (
-        <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-4 container mx-auto items-center 2xl:justify-evenly md:py-20 sm:py-14 py-10 2xl:px-12 lg:px-8 px-4 overflow-hidden">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-4 container mx-auto items-center 2xl:justify-evenly md:pt-20 sm:pt-14 pt-10 pb-8 2xl:px-12 lg:px-8 px-4 overflow-hidden">
             <div className="2xl:max-w-[750px] lg:max-w-full w-auto lg:text-left text-center lg:mt-0 mt-4 ">
-                <h1 className="xl:text-7xl lg:text-5xl md:text-4xl text-3xl xl:leading-[84px] tracking-tight text-tprimary xl:mb-6 mb-3">
+                <h1 className="xl:text-7xl lg:text-5xl md:text-4xl text-3xl font-semibold xl:leading-[84px] tracking-tight text-tprimary xl:mb-6 mb-3">
                     Hello, I'm
                     <br />
                     <span className="whitespace-nowrap">Mohammad Shaheen</span>

@@ -15,15 +15,17 @@ export default function Home() {
         <div className="bg-white relative">
             <Header />
             <Hero />
-            {/* <Icons />
+            {/* <Icons /> */}
             <Experience />
             <WorkProcess />
-            <Portfolio />
             <ProjectIdea />
-            <Blog />
             <WhatIDo />
             <Contact />
-            <Footer /> */}
+            {/*
+            <Portfolio />
+            <Blog />
+            */}
+            <Footer />
         </div>
     )
 }

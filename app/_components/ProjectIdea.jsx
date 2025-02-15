@@ -2,18 +2,18 @@ import React from "react"
 
 const ProjectIdea = () => {
     return (
-        <div className="bg-tprimary py-24 px-12">
+        <div className="bg-tprimary md:py-24 py-8 md:px-12 px-4">
             <div className="container mx-auto text-center ">
-                <h2 className="text-white text-5xl">
+                <h2 className="text-white xl:text-5xl font-semibold md:text-3xl text-2xl">
                     Do you have Project Idea?
                     <br /> Let's discuss your project!
                 </h2>
-                <p className="text-[#A5ACB5] text-lg my-8">
+                <p className="text-[#A5ACB5] text-lg md:my-8 my-6">
                     There are many variations of passages of Lorem Ipsum
                     available, <br /> but the majority have suffered alteration.
                 </p>
                 <a
-                    className="group relative inline-flex items-center overflow-hidden rounded bg-primary px-8 py-3 text-white focus:ring-3 focus:outline-hidden"
+                    className="group relative inline-flex items-center overflow-hidden md:w-auto w-full justify-center rounded bg-primary px-8 py-3 text-white focus:ring-3 focus:outline-hidden"
                     href="#"
                 >
                     <span className="absolute -end-full transition-all group-hover:end-4">

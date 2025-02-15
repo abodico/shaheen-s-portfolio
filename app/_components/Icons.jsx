@@ -17,6 +17,7 @@ import _15 from "../../public/icons/Rectangle 2862.svg"
 import _16 from "../../public/icons/Rectangle 2863.svg"
 import _17 from "../../public/icons/Rectangle 2864.svg"
 import Image from "next/image"
+// import Slider from "react-slick"
 
 const icons = [
     _1,
@@ -38,6 +39,41 @@ const icons = [
     _17,
 ]
 const Icons = () => {
+    // var settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     autoplay: true,
+    //     // responsive: [
+    //     //     {
+    //     //         breakpoint: 1024,
+    //     //         settings: {
+    //     //             slidesToShow: 4,
+    //     //             slidesToScroll: 1,
+    //     //             infinite: true,
+    //     //             dots: true,
+    //     //         },
+    //     //     },
+    //     //     {
+    //     //         breakpoint: 600,
+    //     //         settings: {
+    //     //             slidesToShow: 2,
+    //     //             slidesToScroll: 2,
+    //     //             initialSlide: 2,
+    //     //         },
+    //     //     },
+    //     //     {
+    //     //         breakpoint: 480,
+    //     //         settings: {
+    //     //             slidesToShow: 1,
+    //     //             slidesToScroll: 1,
+    //     //         },
+    //     //     },
+    //     // ],
+    // }
     return (
         <div className="container mx-auto px-12 flex gap-3.5 justify-center relative z-10">
             {icons.map((icon) => (
@@ -49,6 +85,7 @@ const Icons = () => {
                     height={70}
                 />
             ))}
+            {/* <Slider {...settings}></Slider> */}
         </div>
     )
 }

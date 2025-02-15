@@ -13,9 +13,9 @@ const links = [
 ]
 const Footer = () => {
     return (
-        <footer className="px-12 bg-tprimary py-20">
+        <footer className="lg:px-12 px-4 bg-tprimary lg:py-20 py-10">
             <div className="mx-auto container mt-20">
-                <div className="flex items-center justify-between mb-10">
+                <div className="flex lg:flex-row flex-col lg:gap-0 gap-6 items-center justify-between mb-10">
                     <a className="block" href="#">
                         <Image
                             src={logo.src}
@@ -26,9 +26,17 @@ const Footer = () => {
                     </a>
 
                     <nav aria-label="Global">
-                        <ul className="flex items-center text-xl leading-6 text-white ">
-                            {links.map((item) => (
-                                <li key={item} className="">
+                        <ul className="grid lg:grid-cols-7 grid-cols-2 lg:gap-0 gap-8 items-center text-xl leading-6 text-white ">
+                            {links.map((item, index) => (
+                                <li
+                                    key={item}
+                                    className={
+                                        "mx-auto hover:text-primary transition" +
+                                        (index === 6
+                                            ? " lg:col-span-1 col-span-2"
+                                            : "")
+                                    }
+                                >
                                     <a
                                         className="p-3"
                                         href={"#" + item.toLocaleLowerCase()}
