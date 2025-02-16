@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import {
     FaBehance,
@@ -9,6 +10,8 @@ import {
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi"
 import { IoCallOutline } from "react-icons/io5"
 import { TbSend2 } from "react-icons/tb"
+import { client } from "../../sanity/client"
+
 const Card = ({ title, link, icon, href }) => (
     <a
         href={href}
@@ -73,8 +76,30 @@ const socials = [
     },
 ]
 const Contact = () => {
+    const createContactEntry = async (data, e) => {
+        try {
+            const result = await client.create(data)
+            // console.log("Document created:", result)
+            e.target.reset()
+        } catch (error) {
+            console.error("Error creating document:", error)
+        }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const data = {
+            _type: "contact",
+            name: e.target[0].value,
+            email: e.target[1].value,
+            phoneNumber: e.target[2].value,
+            subject: e.target[3].value,
+            message: e.target[4].value,
+        }
+        createContactEntry(data, e)
+    }
     return (
-        <div className="bg-white lg:px-12 md:px-4">
+        <div id="contact" className="bg-white lg:px-12 md:px-4">
             <div className="bg-white container mx-auto rounded-2xl relative top-20 xl:p-[88px] lg:p-14 md:p-10 p-2 flex lg:flex-row flex-col items-center justify-between shadow-[0px_59px_124px_0px_#0000001F]">
                 {/* left-side */}
                 <div className="lg:max-w-[40%] ">
@@ -118,6 +143,7 @@ const Contact = () => {
                     </p>
                     <form
                         action="#"
+                        onSubmit={(e) => handleSubmit(e)}
                         className="space-y-4 text-lg text-tsecondary"
                     >
                         <div>

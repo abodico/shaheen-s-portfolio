@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const ProjectIdea = () => {
@@ -12,9 +13,9 @@ const ProjectIdea = () => {
                     There are many variations of passages of Lorem Ipsum
                     available, <br /> but the majority have suffered alteration.
                 </p>
-                <a
+                <Link
                     className="group relative inline-flex items-center overflow-hidden md:w-auto w-full justify-center rounded bg-primary px-8 py-3 text-white focus:ring-3 focus:outline-hidden"
-                    href="#"
+                    href="#contact"
                 >
                     <span className="absolute -end-full transition-all group-hover:end-4">
                         <svg
@@ -36,7 +37,7 @@ const ProjectIdea = () => {
                     <span className="text-sm font-medium transition-all group-hover:me-4">
                         Let's work Together
                     </span>
-                </a>
+                </Link>
             </div>
         </div>
     )

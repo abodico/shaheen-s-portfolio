@@ -2,6 +2,7 @@ import Image from "next/image"
 import React from "react"
 import avatar from "../../public/Subtract.png"
 import Counters from "./Counters"
+import Link from "next/link"
 
 const Hero = () => {
     return (
@@ -19,9 +20,12 @@ const Hero = () => {
                     seeking a new challenge to user-centered designs that
                     enhance usability, engagement, and business goals.
                 </p>
-                <button className="inline-block rounded bg-primary lg:px-6 lg:py-3 px-12 py-4 sm:w-auto w-full lg:mb-16 mb-8 xl:text-xl lg:text-lg tracking-wider font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none ">
+                <Link
+                    href="#contact"
+                    className="inline-block rounded bg-primary lg:px-6 lg:py-3 px-12 py-4 sm:w-auto w-full lg:mb-16 mb-8 xl:text-xl lg:text-lg tracking-wider font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none "
+                >
                     Say Hello!
-                </button>
+                </Link>
                 <Counters />
             </div>
             <div className="relative">

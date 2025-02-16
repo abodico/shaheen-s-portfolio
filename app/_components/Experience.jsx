@@ -32,7 +32,7 @@ const socials = [
 ]
 const Experience = () => {
     return (
-        <div className="lg:px-12">
+        <div id="about" className="lg:px-12">
             <div className="shadow-experience-double container mx-auto relative lg:top-20 top-10 flex lg:flex-row flex-col justify-between items-center 2xl:gap-32 xl:gap-24 md:gap-10 gap-16  xl:px-28 lg:px-12 px-4 lg:py-20 py-8 rounded-2xl bg-white">
                 {/* image-side */}
                 <div className="xl:w-[424px] xl:h-[468px] lg:w-[380px] lg:h-[400px] md:w-[330px] md:h-[350px] w-[270px] h-[290px] bg-[#F0F1F3] overflow-visible rounded-[10px] relative z-10">
@@ -59,7 +59,7 @@ const Experience = () => {
                     </div>
                 </div>
                 {/* info-side */}
-                <div className="max-w-[536px]  lg:text-left text-center">
+                <div className="max-w-[536px] lg:text-left text-center">
                     <h3 className="xl:text-[38px] font-semibold md:text-3xl text-2xl text-tprimary md:leading-[50px] md:mb-8 mb-4">
                         I am Professional User Experience Designer
                     </h3>
@@ -77,9 +77,9 @@ const Experience = () => {
                     <div className="flex md:flex-row flex-col justify-center lg:justify-start gap-4">
                         <Link
                             className="inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
-                            href="#"
+                            href="#portfolio"
                         >
-                            My Project
+                            My Projects
                         </Link>
 
                         <a

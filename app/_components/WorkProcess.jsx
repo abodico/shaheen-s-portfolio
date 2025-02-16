@@ -61,7 +61,10 @@ const WorkProcess = () => {
         autoplay: true,
     }
     return (
-        <div className="bg-section-secondary w-full lg:py-40 py-20 xl:px-12 lg:px-6 px-4">
+        <div
+            id="process"
+            className="bg-section-secondary w-full lg:py-40 py-20 xl:px-12 lg:px-6 px-4"
+        >
             <div className="container mx-auto bg-section-secondary flex lg:flex-row flex-col justify-between gap-8 items-center">
                 {/* info */}
                 <div className="lg:max-w-[40%] lg:text-left text-center">

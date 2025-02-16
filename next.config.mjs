@@ -8,6 +8,9 @@ const nextConfig = {
             },
         ],
     },
+    env: {
+        SANITY_WRITE_TOKEN: process.env.SANITY_WRITE_TOKEN,
+    },
 }
 
 export default nextConfig

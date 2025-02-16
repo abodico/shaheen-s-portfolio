@@ -12,19 +12,17 @@ import Footer from "./_components/Footer"
 
 export default function Home() {
     return (
-        <div className="bg-white relative">
+        <div id="home" className="bg-white relative">
             <Header />
             <Hero />
-            {/* <Icons /> */}
+            <Icons />
             <Experience />
             <WorkProcess />
+            <Portfolio />
             <ProjectIdea />
+            <Blog />
             <WhatIDo />
             <Contact />
-            {/*
-            <Portfolio />
-            <Blog />
-            */}
             <Footer />
         </div>
     )

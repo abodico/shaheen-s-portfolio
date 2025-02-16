@@ -13,7 +13,7 @@ const options = { next: { revalidate: 30 } }
 const Card = ({ img, date, title, url }) => (
     <Link
         href={url}
-        className="rounded-lg block overflow-hidden text-left shadow-card "
+        className="rounded-lg block overflow-hidden text-left shadow-card h-full "
     >
         {/* check image's shadow please */}
         <Image
@@ -25,7 +25,7 @@ const Card = ({ img, date, title, url }) => (
         />
         <div className="p-6 ">
             <p className="text-sm text-tsecondary mb-2">{date}</p>
-            <p className="text-lg text-[#333]">{title}</p>
+            <p className="text-lg text-[#333] line-clamp-2">{title}</p>
         </div>
     </Link>
 )
@@ -35,7 +35,6 @@ const Blog = () => {
     const fetch = async () => {
         const blogs = await client.fetch(POSTS_QUERY, {}, options)
         setBlogs(blogs)
-        console.log(blogs)
     }
     useEffect(() => {
         fetch()
@@ -52,33 +51,26 @@ const Blog = () => {
         autoplay: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 1023,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     initialSlide: 2,
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
                 },
             },
         ],
     }
     return (
-        <div className="container mx-auto text-center py-20 px-12 overflow-x-hidden ">
+        <div
+            id="blog"
+            className="container mx-auto text-center py-20 px-12 overflow-x-hidden "
+        >
             <h2 className="text-5xl leading-[56px] mb-6">My Blog</h2>
             <p className="text-tsecondary text-lg mb-16 max-w-[650px] mx-auto">
                 There are many variations of passages of Lorem Ipsum available,
@@ -86,9 +78,6 @@ const Blog = () => {
             </p>
             <Slider {...settings}>
                 {blogs.map((blog) => {
-                    const blogImageUrl = blog.poster
-                        ? urlFor(blog.poster)?.width(550).height(310).url()
-                        : null
                     return (
                         <div className="px-3" key={blog.blogName}>
                             <Card

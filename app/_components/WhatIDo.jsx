@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 const Card = ({ title, text }) => (
@@ -22,7 +23,10 @@ const data = [
 ]
 const WhatIDo = () => {
     return (
-        <div className="bg-section-secondary lg:py-20 py-10 lg:px-12 px-4">
+        <div
+            id="services"
+            className="bg-section-secondary lg:py-20 py-10 lg:px-12 px-4"
+        >
             <div className="container mx-auto flex lg:flex-row flex-col lg:gap-0 gap-8 items-center justify-between">
                 <div className="lg:max-w-[40%] lg:text-left text-center">
                     <h2 className="lg:text-5xl font-semibold md:text-3xl text-2xl text-[#333] lg:mb-6 mb-4 ">
@@ -38,9 +42,12 @@ const WhatIDo = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nulla purus arcu, varius eget velit non.
                     </p>
-                    <button className="lg:mt-12 mt-4 inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden">
+                    <Link
+                        href="#contact"
+                        className="lg:mt-12 mt-4 inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                    >
                         Say Hello!
-                    </button>
+                    </Link>
                 </div>
                 <div className="flex flex-col lg:gap-6 gap-4 lg:max-w-[50%]">
                     {data.map((item) => (
