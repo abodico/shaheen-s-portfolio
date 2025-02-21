@@ -125,13 +125,14 @@ const Contact = () => {
                     {/* socials */}
                     <div className="flex gap-3  bg-white w-fit mx-auto lg:mb-0 mb-10">
                         {socials.map((item) => (
-                            <Link
+                            <a
+                                target="_blank"
                                 key={item.link}
                                 href={item.link}
                                 className="size-12 rounded-[4px] shadow-card transition-all text-primary bg-white hover:bg-primary hover:text-white text-center flex items-center justify-center"
                             >
                                 {item.icon}
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>

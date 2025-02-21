@@ -48,13 +48,14 @@ const Experience = () => {
                     {/* socials */}
                     <div className="flex mx-auto bg-white p-3 shadow-md w-fit relative rounded bottom-7 z-10">
                         {socials.map((item) => (
-                            <Link
+                            <a
+                                target="_blank"
                                 key={item.link}
                                 href={item.link}
                                 className="xl:size-12 md:size-10 size-8 rounded-[4px] text-primary bg-white transition hover:bg-primary hover:text-white text-center flex items-center justify-center"
                             >
                                 {item.icon}
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>
