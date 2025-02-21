@@ -56,30 +56,30 @@ const contacts = [
 const socials = [
     {
         icon: <FaFacebookF className="text-[18px]" />,
-        link: "www.facebook.com",
+        link: "https://www.facebook.com/963shaheen",
     },
     {
         icon: <FaDribbble className="text-[18px]" />,
-        link: "www.dribbble.com",
+        link: "https://dribbble.com/SHAHEEN-",
     },
     {
         icon: <FaInstagram className="text-[18px]" />,
-        link: "www.instagram.com",
+        link: "https://www.instagram.com/mohammad.shaheen_",
     },
     {
         icon: <FaLinkedinIn className="text-[18px]" />,
-        link: "www.linkedin.com",
+        link: "https://www.linkedin.com/in/shaheen-",
     },
     {
         icon: <FaBehance className="text-[18px]" />,
-        link: "www.behance.com",
+        link: "https://www.behance.net/shaheen-",
     },
 ]
+
 const Contact = () => {
     const createContactEntry = async (data, e) => {
         try {
             const result = await client.create(data)
-            // console.log("Document created:", result)
             e.target.reset()
         } catch (error) {
             console.error("Error creating document:", error)

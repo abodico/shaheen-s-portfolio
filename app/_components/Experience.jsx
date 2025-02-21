@@ -11,23 +11,23 @@ import Link from "next/link"
 const socials = [
     {
         icon: <FaFacebookF className="text-[18px]" />,
-        link: "www.facebook.com",
+        link: "https://www.facebook.com/963shaheen",
     },
     {
         icon: <FaDribbble className="text-[18px]" />,
-        link: "www.dribbble.com",
+        link: "https://dribbble.com/SHAHEEN-",
     },
     {
         icon: <FaInstagram className="text-[18px]" />,
-        link: "www.instagram.com",
+        link: "https://www.instagram.com/mohammad.shaheen_",
     },
     {
         icon: <FaLinkedinIn className="text-[18px]" />,
-        link: "www.linkedin.com",
+        link: "https://www.linkedin.com/in/shaheen-",
     },
     {
         icon: <FaBehance className="text-[18px]" />,
-        link: "www.behance.com",
+        link: "https://www.behance.net/shaheen-",
     },
 ]
 const Experience = () => {
@@ -84,8 +84,8 @@ const Experience = () => {
 
                         <a
                             className="flex items-center gap-3 md:w-auto w-full justify-center rounded border border-current px-6 py-3 text-sm font-medium text-primary transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
-                            download="Abdalmoamen Abbara.pdf"
-                            href={"Abdalmoamen Abbara.pdf"}
+                            download="Mohammad Shaheen CV 2025.pdf"
+                            href={"Mohammad Shaheen CV 2025.pdf"}
                         >
                             <FiDownload className="size-6" />
                             Download CV
