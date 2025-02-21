@@ -15,7 +15,7 @@ import { client } from "../../sanity/client"
 const Card = ({ title, link, icon, href }) => (
     <a
         href={href}
-        className="group rounded-[10px] flex gap-3 w-full p-6 hover:shadow-[0px_12px_64px_0px_#1C19191F] transition-all overflow-hidden"
+        className="group rounded-[10px] flex gap-3 w-full sm:p-6 px-2 py-4 hover:shadow-[0px_12px_64px_0px_#1C19191F] transition-all overflow-hidden"
     >
         {icon}
         <div className="max-w-[calc(100%-60px)]">
@@ -99,7 +99,7 @@ const Contact = () => {
         createContactEntry(data, e)
     }
     return (
-        <div id="contact" className="bg-white lg:px-12 md:px-4">
+        <div id="contact" className="bg-white 2xl:px-12 lg:px-8 px-4">
             <div className="bg-white container mx-auto rounded-2xl relative top-20 xl:p-[88px] lg:p-14 md:p-10 p-2 flex lg:flex-row flex-col items-center justify-between shadow-[0px_59px_124px_0px_#0000001F]">
                 {/* left-side */}
                 <div className="lg:max-w-[40%] ">

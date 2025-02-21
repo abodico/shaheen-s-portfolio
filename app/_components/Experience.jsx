@@ -32,7 +32,7 @@ const socials = [
 ]
 const Experience = () => {
     return (
-        <div id="about" className="lg:px-12">
+        <div id="about" className="2xl:px-12 lg:px-8 px-4">
             <div className="shadow-experience-double container mx-auto relative lg:top-20 top-10 flex lg:flex-row flex-col justify-between items-center 2xl:gap-32 xl:gap-24 md:gap-10 gap-16  xl:px-28 lg:px-12 px-4 lg:py-20 py-8 rounded-2xl bg-white">
                 {/* image-side */}
                 <div className="xl:w-[424px] xl:h-[468px] lg:w-[380px] lg:h-[400px] md:w-[330px] md:h-[350px] w-[270px] h-[290px] bg-[#F0F1F3] overflow-visible rounded-[10px] relative z-10">
@@ -42,7 +42,7 @@ const Experience = () => {
                         alt="person"
                         width={480}
                         height={483}
-                        className="relative z-10 xl:w-[460px] xl:h-[463px] lg:w-[400px] md:w-[350px] md:h-auto w-[295px]c h-[295px] bottom-1 md:bottom-0 max-w-max max-h-max rounded-[10px]"
+                        className="relative z-10 xl:w-[460px] xl:h-[463px] lg:size-[400px] md:w-[350px] md:h-[350px] w-[295px]c h-[295px] bottom-1 md:bottom-0 max-w-max rounded-[10px]"
                     />
                     <div className="absolute inset-0 w-[calc(100%+10px)] h-[calc(100%+10px)] rounded-[10px] bg-primary z-0 animate-shake"></div>
                     {/* socials */}

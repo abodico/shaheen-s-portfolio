@@ -69,7 +69,7 @@ const Blog = () => {
     return (
         <div
             id="blog"
-            className="container mx-auto text-center py-20 px-12 overflow-x-hidden "
+            className="container mx-auto text-center py-20 2xl:px-12 lg:px-8 px-4 overflow-x-hidden "
         >
             <h2 className="text-5xl leading-[56px] mb-6">My Blog</h2>
             <p className="text-tsecondary text-lg mb-16 max-w-[650px] mx-auto">

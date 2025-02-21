@@ -25,7 +25,7 @@ const WhatIDo = () => {
     return (
         <div
             id="services"
-            className="bg-section-secondary lg:py-20 py-10 lg:px-12 px-4"
+            className="bg-section-secondary lg:py-20 py-10 2xl:px-12 lg:px-8 px-4"
         >
             <div className="container mx-auto flex lg:flex-row flex-col lg:gap-0 gap-8 items-center justify-between">
                 <div className="lg:max-w-[40%] lg:text-left text-center">

@@ -38,7 +38,7 @@ const Header = () => {
     }, [])
     return (
         <header
-            className={`${isScrollingUp ? "translate-y-0" : "-translate-y-full"} transition-all md:shadow bg-white px-12 sticky top-0 z-50`}
+            className={`${isScrollingUp ? "translate-y-0" : "-translate-y-full"} transition-all md:shadow bg-white 2xl:px-12 lg:px-8 px-4 sticky top-0 z-50`}
         >
             <div className="mx-auto container">
                 <div className="flex py-5 items-center justify-between ">

@@ -97,7 +97,7 @@ const Portfolio = () => {
     return (
         <div
             id="portfolio"
-            className="container mx-auto text-center py-20 px-12"
+            className="container mx-auto text-center py-20 2xl:px-12 lg:px-8 px-4"
         >
             <h2 className="xl:text-5xl font-semibold md:text-3xl text-2xl xl:leading-[56px] mb-6">
                 Portfolio

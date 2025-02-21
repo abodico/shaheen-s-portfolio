@@ -63,7 +63,7 @@ const WorkProcess = () => {
     return (
         <div
             id="process"
-            className="bg-section-secondary w-full lg:py-40 py-20 xl:px-12 lg:px-6 px-4"
+            className="bg-section-secondary w-full lg:py-40 py-20 2xl:px-12 lg:px-8 px-4"
         >
             <div className="container mx-auto bg-section-secondary flex lg:flex-row flex-col justify-between gap-8 items-center">
                 {/* info */}
@@ -71,11 +71,11 @@ const WorkProcess = () => {
                     <h2 className="lg:text-5xl font-semibold md:text-3xl text-2xl leading-[56px] lg:mb-6 mb-4">
                         Work Process
                     </h2>
-                    <p className="lg:text-2xl text-lg mb-4 text-tsecondary">
+                    <p className="xl:text-2xl text-lg mb-4 text-tsecondary">
                         Our streamlined process ensures efficiency and
                         excellence at every stage.
                     </p>
-                    <p className="lg:text-2xl text-lg text-tsecondary">
+                    <p className="xl:text-2xl text-lg text-tsecondary">
                         We begin with in-depth research to understand your
                         goals, analyze data to craft a strategic plan, design
                         user-centric solutions that blend functionality with

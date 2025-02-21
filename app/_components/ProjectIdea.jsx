@@ -3,7 +3,7 @@ import React from "react"
 
 const ProjectIdea = () => {
     return (
-        <div className="bg-tprimary md:py-24 py-8 md:px-12 px-4">
+        <div className="bg-tprimary md:py-24 py-8 2xl:px-12 lg:px-8 px-4">
             <div className="container mx-auto text-center ">
                 <h2 className="text-white xl:text-5xl font-semibold md:text-3xl text-2xl">
                     Do you have Project Idea?

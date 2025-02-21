@@ -13,7 +13,7 @@ const links = [
 ]
 const Footer = () => {
     return (
-        <footer className="lg:px-12 px-4 bg-tprimary lg:py-20 py-10">
+        <footer className="2xl:px-12 lg:px-8 px-4 bg-tprimary lg:py-20 py-10">
             <div className="mx-auto container mt-20">
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-6 items-center justify-between mb-10">
                     <a className="block" href="#">

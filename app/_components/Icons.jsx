@@ -79,7 +79,7 @@ const Icons = () => {
         ],
     }
     return (
-        <div className="container mx-auto lg:px-12 px-4 flex gap-3.5 justify-center relative z-10">
+        <div className="container mx-auto 2xl:px-12 lg:px-8 px-4 flex gap-3.5 justify-center relative z-10">
             <div className="w-full">
                 <Slider {...settings}>
                     {icons.map((icon) => (
