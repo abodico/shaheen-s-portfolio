@@ -20,7 +20,7 @@ const Card = ({ title, link, icon, href }) => (
         {icon}
         <div className="max-w-[calc(100%-60px)]">
             <p className="text-tsecondary text-sm mb-1">{title}</p>
-            <p className="text-tprimary overflow-hidden text-ellipsis md:text-base text-sm">
+            <p className="text-tprimary font-bold overflow-hidden text-ellipsis md:text-base text-sm">
                 {link}
             </p>
         </div>
