@@ -20,7 +20,7 @@ const countersData = [
 ]
 const Counters = () => {
     return (
-        <div className="grid grid-cols-3 gap-1 xl:w-[648px] lg:w-[400px] max-w-full rounded-md overflow-hidden">
+        <div className="grid grid-cols-3 gap-1 xl:w-[648px] lg:w-[400px] max-w-full rounded-md overflow-hidden shadow-lg">
             {countersData.map((item) => (
                 <div
                     key={item.subtitle}

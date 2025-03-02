@@ -77,7 +77,7 @@ const Experience = () => {
                     </p>
                     <div className="flex md:flex-row flex-col justify-center lg:justify-start gap-4">
                         <Link
-                            className="inline-block rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
+                            className="flex items-center rounded md:w-auto w-full bg-primary px-6 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-hidden"
                             href="#portfolio"
                         >
                             My Projects

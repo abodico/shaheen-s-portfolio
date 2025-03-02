@@ -157,6 +157,7 @@ const Contact = () => {
                                 type="text"
                                 id="name"
                                 spellCheck="false"
+                                required
                             />
                         </div>
 
@@ -171,6 +172,7 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     spellCheck="false"
+                                    required
                                 />
                             </div>
 
@@ -197,6 +199,7 @@ const Contact = () => {
                                 type="text"
                                 id="subject"
                                 spellCheck="false"
+                                required
                             />
                         </div>
                         <div>
@@ -210,6 +213,7 @@ const Contact = () => {
                                 rows="3"
                                 id="message"
                                 spellCheck="false"
+                                required
                             ></textarea>
                         </div>
 

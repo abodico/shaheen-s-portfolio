@@ -9,6 +9,15 @@ import Slider from "react-slick"
 
 const POSTS_QUERY = `*[_type=="blog"]{poster,date,blogName,link}`
 const options = { next: { revalidate: 30 } }
+export function formatDate(isoDateString) {
+    const date = new Date(isoDateString)
+
+    const year = date.getFullYear()
+    const month = String(date.getMonth() + 1).padStart(2, "0") // Months are 0-indexed
+    const day = String(date.getDate()).padStart(2, "0")
+
+    return `${year}-${month}-${day}`
+}
 
 const Card = ({ img, date, title, url }) => (
     <Link
@@ -24,7 +33,7 @@ const Card = ({ img, date, title, url }) => (
             className="shadow-mdd w-full"
         />
         <div className="p-6 ">
-            <p className="text-sm text-tsecondary mb-2">{date}</p>
+            <p className="text-sm text-tsecondary mb-2">{formatDate(date)}</p>
             <p className="text-lg text-[#333] line-clamp-2">{title}</p>
         </div>
     </Link>

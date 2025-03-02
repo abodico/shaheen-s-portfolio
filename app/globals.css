@@ -5,3 +5,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+h2,
+h3 {
+    @apply tracking-wide;
+}

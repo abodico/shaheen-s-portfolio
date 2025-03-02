@@ -1,5 +1,5 @@
 "use client"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import _1 from "../../public/icons/Rectangle 2848.svg"
 import _2 from "../../public/icons/Rectangle 2849.svg"
 import _3 from "../../public/icons/Rectangle 2850.svg"
@@ -18,7 +18,6 @@ import _15 from "../../public/icons/Rectangle 2862.svg"
 import _16 from "../../public/icons/Rectangle 2863.svg"
 import _17 from "../../public/icons/Rectangle 2864.svg"
 import Image from "next/image"
-import Slider from "react-slick"
 
 const icons = [
     _1,
@@ -39,60 +38,49 @@ const icons = [
     _16,
     _17,
 ]
+import Marquee from "react-fast-marquee"
+
 const Icons = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        arrows: false,
-        autoplay: true,
-        speed: 300,
-        slidesToShow: 17,
-        slidesToScroll: 2,
-        responsive: [
-            {
-                breakpoint: 1535,
-                settings: {
-                    slidesToShow: 14,
-                },
-            },
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 12,
-                },
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 10,
-                    slidesToScroll: 2,
-                },
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                },
-            },
-        ],
-    }
+    const [speed, setSpeed] = useState(50)
+    const [gap, setGap] = useState(16)
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 767) {
+                setSpeed(30)
+                setGap(8)
+            } else if (window.innerWidth < 1024) {
+                setSpeed(40)
+                setGap(12)
+            } else {
+                setSpeed(50)
+                setGap(16)
+            }
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        handleResize()
+
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
     return (
-        <div className="container mx-auto 2xl:px-12 lg:px-8 px-4 flex gap-3.5 justify-center relative z-10">
+        <div className="container mx-auto 2xl:px-12 lg:px-8 px-4 pt-12 flex gap-3.5 justify-center relative z-10">
             <div className="w-full">
-                <Slider {...settings}>
+                <Marquee speed={speed} gradient={false} pauseOnHover={false}>
                     {icons.map((icon) => (
-                        <Image
-                            key={icon.src}
-                            src={icon.src}
-                            alt="icon"
-                            width={70}
-                            height={70}
-                            className="md:h-[70px] h-12 w-auto"
-                        />
+                        <div key={icon.src} style={{ marginRight: `${gap}px` }}>
+                            <Image
+                                src={icon.src}
+                                alt="icon"
+                                width={70}
+                                height={70}
+                                className="md:h-[70px] h-12 w-auto"
+                            />
+                        </div>
                     ))}
-                </Slider>
+                </Marquee>
             </div>
         </div>
     )

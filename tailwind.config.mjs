@@ -25,6 +25,8 @@ export default {
                     "linear-gradient(to top right,#A35C6A 0%,#A35C6A 60%,#fff 60% , #fff 100%)",
                 "container-gradient":
                     "linear-gradient(to top right, #F2DDB0, white)",
+                "beige-to-transparent":
+                    "linear-gradient(to top, #F2DDB0 0% ,#F2DDB0 50% , transparent 50%, transparent 100%)",
             },
             keyframes: {
                 rotate: {
@@ -35,10 +37,15 @@ export default {
                     "0%": { transform: "translate(0px,0px)" },
                     "100%": { transform: "translate(-10px,-10px)" },
                 },
+                increaseWidth: {
+                    "0%": { width: "0%" },
+                    "100%": { width: "100%" },
+                },
             },
             animation: {
-                rotate: "rotate 5s linear infinite",
+                rotate: "rotate 5s linear 2",
                 shake: "move 1.5s alternate infinite",
+                stretch: "increaseWidth 1s ease-in-out",
             },
         },
     },
